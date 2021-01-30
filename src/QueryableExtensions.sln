@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueryableExtensions", "QueryableExtensions\QueryableExtensions.csproj", "{AF8BA5BC-83BA-4913-B4E2-520159CCD875}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueryableExtestions.Tests", "QueryableExtestions.Tests\QueryableExtestions.Tests.csproj", "{7705CB16-14E8-4D18-A0BE-51CA24F37250}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueryableExtensions.Tests", "QueryableExtensions.Tests\QueryableExtensions.Tests.csproj", "{7705CB16-14E8-4D18-A0BE-51CA24F37250}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -3,6 +3,27 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <RootNamespace>DBissari.QueryableExtensions</RootNamespace>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
+  
+  <PropertyGroup>
+    <OutputType>library</OutputType>
+    <PackageId>DBissari.QueryableExtensions</PackageId>
+    <Version>1.0.0</Version>
+    <PackageTags>Extensions;IQueryable;Queryable;Collections;Pagination;Paging;</PackageTags>
+    <Authors>Déromba Serge Bissari</Authors>
+    <Product>QueryableExtensions</Product>
+    <Description>
+      A set of useful extensions to .NET IQueryable.
+    </Description>
+    <RepositoryUrl>https://github.com/dbissari/DotNetQueryableExtensions.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryBranch>main</RepositoryBranch>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="README.md"/>
+  </ItemGroup>
+
 
 </Project>
