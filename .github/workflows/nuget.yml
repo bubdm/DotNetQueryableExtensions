@@ -1,0 +1,29 @@
+name: Nuget
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  build:
+    
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: src/QueryableExtensions
+    
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 5.0.x
+      - name: Restore dependencies
+        run: dotnet restore
+      - name: Pack the nuget
+        run: dotnet pack -c Release
+      - name: Publish the nuget
+        uses: myci-actions/publish-nuget@2
+        with:
+          filename: '*.nupkg'
+          api-key: ${{ secrets.NUGET_DOT_ORG_API_KEY }}
