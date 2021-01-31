@@ -23,7 +23,4 @@ jobs:
       - name: Pack the nuget
         run: dotnet pack -c Release
       - name: Publish the nuget
-        uses: myci-actions/publish-nuget@2
-        with:
-          filename: '*.nupkg'
-          api-key: ${{ secrets.NUGET_DOT_ORG_API_KEY }}
+        run: dotnet nuget push bin/Release/*.nupkg -s https://api.nuget.org/v3/index.json -k ${{ secrets.NUGET_DOT_ORG_API_KEY }}
